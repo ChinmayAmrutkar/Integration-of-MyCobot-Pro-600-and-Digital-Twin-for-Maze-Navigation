@@ -207,7 +207,7 @@ if __name__ == "__main__":
     # Display waypoints on the solution image
     display_waypoints_on_image(solution_image, limited_waypoints, maze_dimensions=(6,6))
 
-
+    #TAKE MAZE CORNER COORDINATES MANUALLY TO CALIBRATE WORLD COORDINATES WITH ROBOT COORDINATES
     robot_corners = [(409.0,270.0,230),(267.0,270.0,230),(409.0,414.0,230),(267.0,414.0,230)]
     
     robot_trajectory = map_coordinates_to_robot(limited_waypoints, robot_corners, maze_dimensions=(6,6))
